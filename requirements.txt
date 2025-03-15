@@ -1,3 +1,5 @@
 fastapi
 uvicorn
-fish-audio-sdk
+firebase-admin
+requests
+python-multipart
