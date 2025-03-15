@@ -39,8 +39,7 @@ async def upload_model(
     model_name: str = Form(...),
     voice_1: UploadFile = File(...),
     voice_2: UploadFile = File(...),
-    cover_image: UploadFile = File(None),
-    user: dict = Depends(get_current_user)
+    cover_image: UploadFile = File(None)
 ):
     try:
         unique_title = model_name.strip() or f"MyModel_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
